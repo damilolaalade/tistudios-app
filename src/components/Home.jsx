@@ -56,13 +56,13 @@ const Home = () => {
             portraits, often traveling to your destination to capture the
             perfect moment in the perfect place.
           </p>
-          <p class="second-paragraph">
+          <p className="second-paragraph">
             We will be there with you every step of the way to guarantee your
             special moments are captured for all time. To us photography is
             about people being real and then letting us paint a picture of that
             moment to remember it forever.
           </p>
-          <p class="second-paragraph">
+          <p className="second-paragraph">
             This is the story that matters most: real people, real stories, real
             moments. We are incredibly blessed to have a team of photographers
             who work with us on any given weekend. Please take a few minutes to
@@ -79,23 +79,19 @@ const Home = () => {
         </Col>
       </Row>
 
-      <div class="row">
-        <div class="column">
+      <div className="row">
+        <div className="column">
           <img src={gallery6} />
-          <button class="centered">Portraits</button>
+          <button className="centered">Portraits</button>
         </div>
-        <div class="column">
+        <div className="column">
           <img src={gallery5} />
-          <button class="centered">Wedding Photography</button>
+          <button className="centered">Wedding Photography</button>
         </div>
-        <div class="column">
+        <div className="column">
           <img src={gallery8} />
-          <button class="centered">Products Photography</button>
+          <button className="centered">Products Photography</button>
         </div>
-      </div>
-
-      <div class="appointment">
-        <button>Book an Appointment</button>
       </div>
     </div>
   );

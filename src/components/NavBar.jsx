@@ -22,13 +22,13 @@ const NavBar = () => {
   );
 
   return (
-    <header class="header">
-      <div class="container nav-section">
-        <div class="brand-navBtn">
-          <span class="brand-name">TOLOBADUN IMAGERY</span>
-          <p class="brand-name-location">Lagos,Nigeria.</p>
+    <header className="header">
+      <div className="container nav-section">
+        <div className="brand-navBtn">
+          <span className="brand-name">TOLOBADUN IMAGERY</span>
+          <p className="brand-name-location">Lagos,Nigeria.</p>
           <span
-            class="navBtn"
+            className="navBtn"
             onClick={() => {
               setToggleNav((prevState) => !prevState);
             }}
@@ -37,16 +37,16 @@ const NavBar = () => {
           </span>
         </div>
 
-        <nav class={toggleNav ? "top-nav showNav" : "top-nav"}>
-          <ul class="main-ul">
-            <li class="main-list">
+        <nav className={toggleNav ? "top-nav showNav" : "top-nav"}>
+          <ul className="main-ul">
+            <li className="main-list">
               <a href="index.html">Home</a>
             </li>
-            <li class="main-list">
+            <li className="main-list">
               <a href="#overview">About</a>
             </li>
 
-            <li class="dropdown main-list">
+            <li className="dropdown main-list">
               <Dropdown overlay={menu} trigger={["click"]}>
                 <a onClick={(e) => e.preventDefault()}>
                   Services <DownOutlined />
@@ -54,10 +54,10 @@ const NavBar = () => {
               </Dropdown>
             </li>
 
-            <li class="main-list">
+            <li className="main-list">
               <a href="#portraits">Testimonials</a>
             </li>
-            <li class="main-list">
+            <li className="main-list">
               <a href="#contact">Contact</a>
             </li>
           </ul>

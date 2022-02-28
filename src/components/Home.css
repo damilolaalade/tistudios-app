@@ -33,9 +33,9 @@ p {
   display: flex;
   margin-top: 0px;
   margin-left: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   padding: 15px;
-  height: 150vh;
+  height: 100vh;
 }
 
 /* Clear floats after the columns */
@@ -47,10 +47,10 @@ p {
 
 .centered {
   position: absolute;
-  bottom:400px;
+  bottom:0px;
 }
 button{
-  width:15%;
+  width:10%;
   background-color: var(--lightYellow);
   border:none;
   border-radius: 10px;
@@ -60,17 +60,38 @@ button:hover{
   background-color: var(--darkYellow);
 }
 
-.appointment{
- text-align:center;
- margin-top: 0;
+/* Small Laptop */
+@media screen and (min-width: 768px) {
+  .centered {
+  position: absolute;
+  bottom:20px;
+}
+button{
+  width:20%;
+}
 }
 
-.appointment >button{
-  width:50%;
-  height: 15%;
+/* Tablet */
+@media screen and (min-width: 640px) {
+  .centered {
+  position: absolute;
+  bottom:450px;
+}
+button{
+  width:22%;
+}
+img {
+  height: 50vw;
+  margin: 20px;
+  position: relative;
+  top: 100px;
 }
 
 
+}
+
+
+/* Smaller Devices */
 @media screen and (max-width: 500px) {
   .second-paragraph {
     display: none;
@@ -95,6 +116,7 @@ button:hover{
     flex-direction: column;
     width: 90vw;
     height:45vh;
+    margin-bottom: 40px;
     margin-left: inherit;
   }
   .centered{

@@ -1,0 +1,46 @@
+.wrapper{
+   padding: 100px 40px;
+   text-align:center;
+}
+.wrapper h2{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.wrapper p{
+    max-width: 600px;
+    margin:40px auto;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.tbox, .btn{
+    border: none;
+    outline: none;
+}
+
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+}
+
+.email-box:hover> .tbox, .tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+
+.btn{
+    background: var(--darkYellow);
+    color:#c0bdbd;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor:pointer;
+}
