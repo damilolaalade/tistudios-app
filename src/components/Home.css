@@ -1,0 +1,108 @@
+h2 {
+  padding: 20px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+img {
+  height: 40vw;
+  margin: 20px;
+  position: relative;
+  top: 70px;
+}
+
+hr {
+  border: 1px solid var(--lightYellow);
+}
+
+p {
+  font-size: 16px;
+  font-style: oblique;
+  line-height: 1.6;
+}
+
+.second-paragraph {
+  font-size: 16px;
+  font-style: oblique;
+  line-height: 1.6;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  padding: 15px;
+  height: 150vh;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.centered {
+  position: absolute;
+  bottom:400px;
+}
+button{
+  width:15%;
+  background-color: var(--lightYellow);
+  border:none;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: var(--darkYellow);
+}
+
+.appointment{
+ text-align:center;
+ margin-top: 0;
+}
+
+.appointment >button{
+  width:50%;
+  height: 15%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .second-paragraph {
+    display: none;
+  }
+
+  img {
+    height: 70vw;
+    position: relative;
+    top: 60px;
+    bottom: 10px;
+    margin-right: 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  .column {
+    flex-direction: column;
+    width: 90vw;
+    height:45vh;
+    margin-left: inherit;
+  }
+  .centered{
+    position: relative;
+    bottom:15px;  
+  }
+
+  button{
+    width:48%;
+  }
+}

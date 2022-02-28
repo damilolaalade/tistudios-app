@@ -1,0 +1,151 @@
+.header {
+   background-color:#000;
+  position:absolute;
+  width:100%;
+}
+
+.top-nav a {
+  color: #fff;
+}
+
+.top-nav a:hover {
+  color: var(--lightYellow);
+}
+
+.brand-navBtn {
+  background: #000;
+  position: relative;
+  z-index: 999;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 15px 25px;
+  color: var(--white);
+}
+
+.brand-name {
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.brand-name-location {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 12rem;
+  color: var(--lightYellow);
+  font-size: 10px;
+  text-shadow: whitesmoke;
+  text-transform: full-width;
+}
+
+.navBtn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid var(--lightYellow);
+}
+
+.navBtn:hover {
+  background-color: var(--darkYellow);
+  color: black;
+  transition: var(--transition);
+}
+
+.top-nav {
+  background: black;
+  display: flex;
+  position:relative;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-600px);
+  transition: var(--transition);
+}
+.showNav {
+  transform: translateY(0);
+}
+
+.top-nav .main-ul .main-list {
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.top-nav a {
+  position: relative;
+}
+
+.top-nav .main-ul a ::after {
+  content: "";
+  height: 2px;
+  background: var(--lightYellow);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  transition: var(--transition);
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  padding: 8px 0;
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .nav-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navBtn {
+    display: none;
+  }
+
+  .brand-navBtn {
+    flex: 0 0 50%;
+    background: #000;
+  }
+
+  .top-nav {
+    display: flex;
+    flex: 0 1 80%;
+    justify-content: flex-end;
+    align-items: center;
+    transition: transform 0s ease;
+    transform: translateY(0);
+    background: #000;
+  }
+
+  .top-nav .main-ul {
+    display: flex;
+  }
+
+  .top-nav .main-ul .main-list {
+    margin-right: 30px;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .brand-name {
+    font-size: 14px;
+  }
+
+  .brand-name-location {
+    margin-top: 50px;
+    margin-left: 6rem;
+  }
+
+  .navBtn {
+    width: 30px;
+    height: 30px;
+  }
+}
