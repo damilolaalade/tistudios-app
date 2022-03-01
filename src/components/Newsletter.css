@@ -65,11 +65,11 @@
 } 
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1400px) {
     .wrapper {
   text-align: center;
   position:relative;
-  top:190px;
-  bottom:90px;
+  top:210px;
+  bottom:130px;
 } 
 }
