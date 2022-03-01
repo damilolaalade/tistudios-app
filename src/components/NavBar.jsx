@@ -1,21 +1,21 @@
 import { useState } from "react";
 import { Menu, Dropdown } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+import { DownOutlined,MenuOutlined,CloseOutlined } from "@ant-design/icons";
 import "./NavBar.css";
-import { FaAlignJustify, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [toggleNav, setToggleNav] = useState(false);
 
   const menu = (
     <Menu style={{ background: "black" }}>
-      <Menu.Item key="0" style={{ color: "white", background:"black" }}>
+      <Menu.Item key="0" style={{ color: "white", background: "black" }}>
         <a href="https://www.antgroup.com">Portraits</a>
       </Menu.Item>
-      <Menu.Item key="1" style={{ color: "white",  background:"black"}}>
+      <Menu.Item key="1" style={{ color: "white", background: "black" }}>
         <a href="https://www.aliyun.com">Wedding Photography</a>
       </Menu.Item>
-      <Menu.Item key="2" style={{ color: "white",  background:"black" }}>
+      <Menu.Item key="2" style={{ color: "white", background: "black" }}>
         Product Photography
       </Menu.Item>
     </Menu>
@@ -33,17 +33,21 @@ const NavBar = () => {
               setToggleNav((prevState) => !prevState);
             }}
           >
-            {!toggleNav ? <FaAlignJustify /> : <FaTimes />}
+            {!toggleNav ? <MenuOutlined /> : <CloseOutlined />}
           </span>
         </div>
 
         <nav className={toggleNav ? "top-nav showNav" : "top-nav"}>
           <ul className="main-ul">
             <li className="main-list">
-              <a href="index.html">Home</a>
+              <a href="">
+                <Link to="/">Home</Link>
+              </a>
             </li>
             <li className="main-list">
-              <a href="#overview">About</a>
+              <a href="">
+                <Link to="/about-us">About</Link>
+              </a>
             </li>
 
             <li className="dropdown main-list">

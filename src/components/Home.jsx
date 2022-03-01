@@ -49,12 +49,12 @@ const Home = () => {
         <Col xs={{ span: 11, push: 1, offset: 0 }} lg={{ span: 11, offset: 1 }}>
           <h2>Who We Are</h2>
           <hr />
-          <p>Hello!</p>
+          <p>Hello! Welcome to Tolobadun Imagery.</p>
           <p>
-            We are excited to have you drop by at our digital home, Thank you.
-            We specialize in wedding photography, corporate, family and senior
-            portraits, often traveling to your destination to capture the
-            perfect moment in the perfect place.
+            Thank you for taking the time to look at my work. I hope you can see
+            that I love what I do – which is all about the unique combination of
+            the craft and the people. People like you who appreciate the value
+            of great photography.
           </p>
           <p className="second-paragraph">
             We will be there with you every step of the way to guarantee your
@@ -63,8 +63,7 @@ const Home = () => {
             moment to remember it forever.
           </p>
           <p className="second-paragraph">
-            This is the story that matters most: real people, real stories, real
-            moments. We are incredibly blessed to have a team of photographers
+            We are incredibly blessed to have a team of photographers
             who work with us on any given weekend. Please take a few minutes to
             get to know us. We would love to visit with you by phone or in
             person and talk about your wedding, event, portrait session or video

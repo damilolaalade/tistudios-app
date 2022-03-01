@@ -19,12 +19,14 @@ p {
   font-size: 16px;
   font-style: oblique;
   line-height: 1.6;
+  max-width:500px;
 }
 
 .second-paragraph {
   font-size: 16px;
   font-style: oblique;
   line-height: 1.6;
+  max-width:500px;
 }
 
 .column {
@@ -47,49 +49,46 @@ p {
 
 .centered {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
 }
-button{
-  width:10%;
+button {
+  width: 10%;
   background-color: var(--lightYellow);
-  border:none;
+  border: none;
   border-radius: 10px;
 }
 
-button:hover{
+button:hover {
   background-color: var(--darkYellow);
 }
 
 /* Small Laptop */
 @media screen and (min-width: 768px) {
   .centered {
-  position: absolute;
-  bottom:20px;
-}
-button{
-  width:20%;
-}
+    position: absolute;
+    bottom: 20px;
+  }
+  button {
+    width: 20%;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 640px) {
   .centered {
-  position: absolute;
-  bottom:450px;
+    position: absolute;
+    bottom: 450px;
+  }
+  button {
+    width: 22%;
+  }
+  img {
+    height: 50vw;
+    margin: 20px;
+    position: relative;
+    top: 100px;
+  }
 }
-button{
-  width:22%;
-}
-img {
-  height: 50vw;
-  margin: 20px;
-  position: relative;
-  top: 100px;
-}
-
-
-}
-
 
 /* Smaller Devices */
 @media screen and (max-width: 500px) {
@@ -115,16 +114,16 @@ img {
   .column {
     flex-direction: column;
     width: 90vw;
-    height:45vh;
+    height: 45vh;
     margin-bottom: 40px;
     margin-left: inherit;
   }
-  .centered{
+  .centered {
     position: relative;
-    bottom:15px;  
+    bottom: 15px;
   }
 
-  button{
-    width:48%;
+  button {
+    width: 48%;
   }
 }

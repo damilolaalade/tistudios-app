@@ -1,46 +1,75 @@
-.wrapper{
-   padding: 100px 40px;
-   text-align:center;
+.wrapper {
+  padding: 90px 40px ;
+  text-align: center;
 }
-.wrapper h2{
-    font-size: 30px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.wrapper p{
-    max-width: 600px;
-    margin:40px auto;
-    font-size: 16px;
-    font-weight: 300;
+.wrapper h2 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.email-box{
-    height: 40px;
-    display: flex;
-    justify-content: center;
-   
+.wrapper p {
+  max-width: 600px;
+  margin: 40px auto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
 }
 
-.tbox, .btn{
-    border: none;
-    outline: none;
+.email-box {
+  height: 40px;
+  display: flex;
+  justify-content: center;
 }
 
-.tbox{
-    width: 0px;
-    transition: 0.6s;
+.tbox,
+.btn {
+  border: none;
+  outline: none;
 }
 
-.email-box:hover> .tbox, .tbox:focus{
-    width: 260px;
-    padding: 0 10px;
+.tbox {
+  width: 0px;
+  transition: 0.6s;
 }
 
-.btn{
-    background: var(--darkYellow);
-    color:#c0bdbd;
-    padding: 0 10px;
-    text-transform: uppercase;
-    cursor:pointer;
+.email-box:hover > .tbox,
+.tbox:focus {
+  width: 260px;
+  padding: 0 10px;
+}
+
+.btn {
+  background: var(--darkYellow);
+  color: #c0bdbd;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+  text-align: center;
+  position:relative;
+  top:120px;
+  bottom:60px;
+} 
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+  text-align: center;
+  position:relative;
+  top:90px;
+  bottom:-120px;
+} 
+}
+
+@media screen and (min-width: 1400px) {
+    .wrapper {
+  text-align: center;
+  position:relative;
+  top:190px;
+  bottom:90px;
+} 
 }
