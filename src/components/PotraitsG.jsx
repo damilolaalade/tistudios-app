@@ -1,7 +1,16 @@
+import {useEffect} from 'react';
 import "./Portraits.css";
 import { InstagramOutlined } from "@ant-design/icons";
 
 const PotraitsG = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div class="section-two">
       <div class="container ">

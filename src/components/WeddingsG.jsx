@@ -1,8 +1,18 @@
+import {useEffect} from 'react';
 import './Weddings.css';
 import { InstagramOutlined } from "@ant-design/icons";
 
 
 const WeddingsG = () => {
+
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div class="section-two">
       <div class="container ">

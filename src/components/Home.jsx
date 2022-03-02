@@ -8,6 +8,7 @@ import gallery5 from "./../images/gallery5.jpeg";
 import gallery6 from "./../images/gallery6.jpeg";
 import gallery8 from "./../images/gallery8.jpeg";
 import header from "./../images/header.jpeg";
+import { Link } from 'react-router-dom';
 import "./Home.css";
 
 const contentStyle = {
@@ -63,11 +64,11 @@ const Home = () => {
             moment to remember it forever.
           </p>
           <p className="second-paragraph">
-            We are incredibly blessed to have a team of photographers
-            who work with us on any given weekend. Please take a few minutes to
-            get to know us. We would love to visit with you by phone or in
-            person and talk about your wedding, event, portrait session or video
-            project. Please reach out to us through the Contact Page.
+            We are incredibly blessed to have a team of photographers who work
+            with us on any given weekend. Please take a few minutes to get to
+            know us. We would love to visit with you by phone or in person and
+            talk about your wedding, event, portrait session or video project.
+            Please reach out to us through the Contact Page.
           </p>
         </Col>
         <Col
@@ -79,18 +80,24 @@ const Home = () => {
       </Row>
 
       <div className="row">
+        <Link to="/services/portraits">
         <div className="column">
           <img src={gallery6} />
           <button className="centered">Portraits</button>
         </div>
+        </Link>
+        <Link to="/services/weddings">
         <div className="column">
           <img src={gallery5} />
           <button className="centered">Wedding Photography</button>
         </div>
-        <div className="column">
-          <img src={gallery8} />
-          <button className="centered">Products Photography</button>
-        </div>
+        </Link>
+        <Link to="/services/commercial">
+          <div className="column">
+            <img src={gallery8} />
+            <button className="centered">Commercial</button>
+          </div>
+        </Link>
       </div>
     </div>
   );

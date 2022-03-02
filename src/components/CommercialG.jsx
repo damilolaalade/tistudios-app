@@ -1,8 +1,17 @@
+import {useEffect} from 'react';
 import "./Commercial.css";
 import { InstagramOutlined } from "@ant-design/icons";
 
 
 const CommercialG = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div class="section-two">
       <div class="container ">

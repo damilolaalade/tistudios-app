@@ -50,6 +50,7 @@ p {
 .centered {
   position: absolute;
   bottom: 0px;
+  color:black;
 }
 button {
   width: 10%;
@@ -60,6 +61,7 @@ button {
 
 button:hover {
   background-color: var(--darkYellow);
+  color:white;
 }
 
 /* Small Laptop */
