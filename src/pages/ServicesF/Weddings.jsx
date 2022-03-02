@@ -1,15 +1,15 @@
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
-import PotraitsG from "../../components/PotraitsG";
+import WeddingG from "../../components/WeddingsG";
 
-const Portraits = () => {
+const Weddings = () => {
   return (
     <div>
       <NavBar />
-      <PotraitsG />
+      <WeddingG />
       <Footer />
     </div>
   );
 };
 
-export default Portraits;
+export default Weddings;

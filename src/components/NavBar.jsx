@@ -10,13 +10,13 @@ const NavBar = () => {
   const menu = (
     <Menu style={{ background: "black" }}>
       <Menu.Item key="0" style={{ color: "white", background: "black" }}>
-        <a href="https://www.antgroup.com">Portraits</a>
+        <Link to="/services/portraits">Portraits</Link>
       </Menu.Item>
       <Menu.Item key="1" style={{ color: "white", background: "black" }}>
-        <a href="https://www.aliyun.com">Wedding Photography</a>
+        <Link to="/services/weddings">Wedding Photography</Link>
       </Menu.Item>
       <Menu.Item key="2" style={{ color: "white", background: "black" }}>
-        Product Photography
+        <Link to="/services/commercial">Commercial</Link>
       </Menu.Item>
     </Menu>
   );
