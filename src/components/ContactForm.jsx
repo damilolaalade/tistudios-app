@@ -108,18 +108,18 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {/* <div class="map">
+      <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63428.02858255801!2d3.312841533536913!3d6.489768148117441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c1aaf26ce7d%3A0x4d2fd698b58de1a3!2sSurulere%2C%20Ikeja!5e0!3m2!1sen!2sng!4v1646269549494!5m2!1sen!2sng"
           width="100%"
           height="450"
-          frameborder="0"
-          style="border:0;"
-          allowfullscreen=""
+          frameBorder="0"
+          style={{border:"0"}}
+          allowFullScreen=""
           aria-hidden="false"
-          tabindex="0"
+          tabIndex="0"
         ></iframe>
-      </div> */}
+      </div> 
       <div class="contact-footer">
         <h3>Follow Us</h3>
         <div class="social-links">
