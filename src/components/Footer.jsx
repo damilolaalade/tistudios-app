@@ -81,13 +81,13 @@ const Footer = () => {
               <li>
                 <a href="">
                   <RightOutlined />
-                  Testimonials
+                  <Link to="/testimonials">Testimonials</Link>
                 </a>
               </li>
               <li>
                 <a href="">
                   <RightOutlined />
-                  Contact
+                  <Link to="/contact-us">Contact</Link>
                 </a>
               </li>
             </ul>
@@ -109,56 +109,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="single-footer">
-            <h4>Contact </h4>
-            <ul>
-              <li>
-                <a href="">
-                  <EnvironmentOutlined
-                    style={{
-                      fontSize: "28px",
-                      margin: "5px",
-                    }}
-                  />
-                  Oduduwa Street, Surulere, Lagos State.
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <PhoneOutlined
-                    style={{
-                      fontSize: "28px",
-                      margin: "5px",
-                    }}
-                  />
-                  +234-8036297300
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <MailOutlined
-                    style={{
-                      fontSize: "28px",
-                      margin: "5px",
-                    }}
-                  />
-                  tolobadunimagery@gmail.com
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <GlobalOutlined
-                    style={{
-                      fontSize: "28px",
-                      margin: "5px",
-                    }}
-                  />
-                  www.tolobadunimagery.com
-                </a>
-              </li>
-            </ul>
-          </div>
+          
         </div>
         <div class="copy">
           <p className="footer-text">&copy;Tolobadun Imagery 2022.</p>

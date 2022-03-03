@@ -7,7 +7,7 @@ import gallery4 from "./../images/gallery4.jpeg";
 import gallery5 from "./../images/gallery5.jpeg";
 import gallery6 from "./../images/gallery6.jpeg";
 import gallery8 from "./../images/gallery8.jpeg";
-import header from "./../images/header.jpeg";
+import header from "./../images/header.jpg";
 import { Link } from 'react-router-dom';
 import "./Home.css";
 

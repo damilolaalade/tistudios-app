@@ -59,10 +59,14 @@ const NavBar = () => {
             </li>
 
             <li className="main-list">
-              <a href="#portraits">Testimonials</a>
+              <a href="">
+                <Link to="/testimonials">Testimonials</Link>
+              </a>
             </li>
             <li className="main-list">
-              <a href="#contact">Contact</a>
+              <a href="">
+                <Link to="/contact-us">Contact</Link>
+              </a>
             </li>
           </ul>
         </nav>

@@ -14,11 +14,12 @@
 .footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.footer-text{
+.footer-text {
   font-style: normal;
   font-weight: 300;
 }
@@ -134,10 +135,10 @@
   .single-footer {
     width: 110px;
     align-self: auto;
-    margin-left: 5px;
+    margin-left: 25px;
   }
   .single-footer:first-child {
-    margin-left: 12px;
+    margin-left: 25px;
   }
 
   .single-footer ul li a {
@@ -181,7 +182,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .copy{
+  .main {
+    width: 1400px;
+    margin: 0;
+  }
+  .copy {
     margin-left: 450px;
   }
 }
