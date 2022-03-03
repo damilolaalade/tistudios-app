@@ -26,7 +26,11 @@ const NavBar = () => {
       <div className="container nav-section">
         <div className="brand-navBtn">
           <span className="brand-name">TOLOBADUN IMAGERY</span>
+<<<<<<< HEAD
           {/* <p className="brand-name-location">Lagos,Nigeria.</p> */}
+=======
+//           <p className="brand-name-location">Lagos,Nigeria.</p>
+>>>>>>> 68c623e724dc2beda0faf3fffb23d44f682085f8
           <span
             className="navBtn"
             onClick={() => {
