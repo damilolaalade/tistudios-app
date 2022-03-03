@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./Contact.css";
 import {
   ClockCircleOutlined,
@@ -12,6 +13,15 @@ import {
 import connect from "./../images/connect.jpeg";
 
 const ContactForm = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
+
   return (
     <section class="contact-section">
       <div class="contact-bg">
@@ -114,17 +124,17 @@ const ContactForm = () => {
           width="100%"
           height="450"
           frameBorder="0"
-          style={{border:"0"}}
+          style={{ border: "0" }}
           allowFullScreen=""
           aria-hidden="false"
           tabIndex="0"
         ></iframe>
-      </div> 
+      </div>
       <div class="contact-footer">
         <h3>Follow Us</h3>
         <div class="social-links">
           <a href="#">
-            <WhatsAppOutlined  />
+            <WhatsAppOutlined />
           </a>
           <a href="#">
             <InstagramOutlined />

@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import "./About.css";
 
 const AboutUsText = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div className="overflow">
       <div className="what-we-do">
@@ -38,7 +46,11 @@ const AboutUsText = () => {
           captures the entire story of the day.
         </p>
       </div>
-      <img src = "https://images.pexels.com/photos/3679525/pexels-photo-3679525.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="camera-lens" className="lens" />
+      <img
+        src="https://images.pexels.com/photos/3679525/pexels-photo-3679525.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="camera-lens"
+        className="lens"
+      />
     </div>
   );
 };

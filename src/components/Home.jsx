@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Carousel } from "antd";
 import { Row, Col } from "antd";
 import gallery1 from "./../images/gallery1.jpeg";
@@ -8,7 +9,7 @@ import gallery5 from "./../images/gallery5.jpeg";
 import gallery6 from "./../images/gallery6.jpeg";
 import gallery8 from "./../images/gallery8.jpeg";
 import header from "./../images/header.jpg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const contentStyle = {
@@ -22,6 +23,14 @@ const contentStyle = {
 };
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div style={{ zIndex: "5", position: "relative", top: "80px" }}>
       <Carousel autoplay>
@@ -81,16 +90,16 @@ const Home = () => {
 
       <div className="row">
         <Link to="/services/portraits">
-        <div className="column">
-          <img src={gallery6} />
-          <button className="centered">Portraits</button>
-        </div>
+          <div className="column">
+            <img src={gallery6} />
+            <button className="centered">Portraits</button>
+          </div>
         </Link>
         <Link to="/services/weddings">
-        <div className="column">
-          <img src={gallery5} />
-          <button className="centered">Wedding Photography</button>
-        </div>
+          <div className="column">
+            <img src={gallery5} />
+            <button className="centered">Wedding Photography</button>
+          </div>
         </Link>
         <Link to="/services/commercial">
           <div className="column">

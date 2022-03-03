@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 
-.brand-name-location {
+/* .brand-name-location {
   position: absolute;
   margin-top: 60px;
   margin-left: 12rem;
@@ -39,7 +39,7 @@
   font-size: 10px;
   text-shadow: whitesmoke;
   text-transform: full-width;
-}
+} */
 
 .navBtn {
   width: 40px;
@@ -137,10 +137,10 @@
     font-size: 14px;
   }
 
-  .brand-name-location {
+  /* .brand-name-location {
     margin-top: 50px;
     margin-left: 6rem;
-  }
+  } */
 
   .navBtn {
     width: 30px;

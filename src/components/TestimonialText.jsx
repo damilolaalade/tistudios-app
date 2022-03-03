@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./Testimonial.css";
 import testimonial1 from "./../images/testimonial1.jpeg";
 import testimonial2b from "./../images/testimonial2.jpeg";
@@ -5,6 +6,13 @@ import testimonial3 from "./../images/testimonial3.jpeg";
 import testimonial6 from "./../images/testimonail6.jpeg";
 
 const TestimonialText = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div className="testimonial-wrapper">
       <h2>What our Clients are Saying!</h2>
