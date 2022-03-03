@@ -24,7 +24,6 @@ const Newsletter = () => {
             className="tbox"
             type="email"
             name="email"
-            value=""
             placeholder="Enter your e-mail"
           />
           <button type="button" className="btn">

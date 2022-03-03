@@ -54,6 +54,12 @@
   top:120px;
   bottom:60px;
 } 
+
+.tbox{
+   width: 260px;
+  padding: 0 10px;
+}
+
 }
 
 @media screen and (min-width: 1024px) {
