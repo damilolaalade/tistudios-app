@@ -44,7 +44,7 @@
 .lens {
   display: block;
   width: 50vw;
-  margin:auto;
+  margin: auto;
 }
 
 @media only screen and (max-width: 500px) {
@@ -74,9 +74,12 @@
   .section {
     position: relative;
     top: 90px;
-    left: 30px;
-    max-width: 350px;
+    left: 10px;
+    max-width: 340px;
     font-size: 14px;
+  }
+  .lens {
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 768px) {

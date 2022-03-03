@@ -33,7 +33,7 @@ const AboutUsText = () => {
           Rather than forced poses we let it flow and capture moments as they
           unfold. Many years of experience also sets us apart. Rain or shine,
           our clients have peace of mind that their images will be amazing.A
-          Tolobadun Image has a very unique look - it's the soft, flattering
+          Tolobadun Imagery has a very unique look - it's the soft, flattering
           lighting, beautiful composition, together with the emotion that really
           captures the entire story of the day.
         </p>
